@@ -120,18 +120,6 @@
 						<Type><![CDATA[RectangularNode]]></Type>        
 					</Properties>
 				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1696257416126</Id>
-					<Name><![CDATA[mesaa]]></Name>
-					<X>427.333</X><Y>871.333</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[RectangularNode]]></Type>        
-					</Properties>
-				</Variable>
 				<Variable Class="CollectionVariable">
 					<Id>1696257416122</Id>
 					<Name><![CDATA[mesasLibres]]></Name>
@@ -348,13 +336,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>90</X><Y>0</Y></Point>
+						<Point><X>50</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
 					<Id>1696257416711</Id>
 					<Name><![CDATA[connector]]></Name>
-					<X>485.3330000000001</X><Y>680.333</Y>
+					<X>475.3330000000001</X><Y>680.333</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -381,7 +369,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>52</X><Y>1</Y></Point>
+						<Point><X>62</X><Y>1</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -653,7 +641,7 @@
 				<Connector>
 					<Id>1696257416729</Id>
 					<Name><![CDATA[connector11]]></Name>
-					<X>787.333</X><Y>681.333</Y>
+					<X>787</X><Y>681</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -671,39 +659,6 @@
 					<TargetEmbeddedObjectReference>
 						<PackageName><![CDATA[resto]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[setMesaa]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[PlainTransfer]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>20</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1696257416731</Id>
-					<Name><![CDATA[connector17]]></Name>
-					<X>827.333</X><Y>681.333</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[setMesaa]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[PlainTransfer]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[entregarComida]]></ItemName>
 					</TargetEmbeddedObjectReference>
 					<TargetConnectableItemReference>
@@ -713,13 +668,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>20</X><Y>0</Y></Point>
+						<Point><X>60</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1696258886395</Id>
+					<Id>1696310501654</Id>
 					<Name><![CDATA[connector18]]></Name>
-					<X>445</X><Y>680</Y>
+					<X>435</X><Y>680</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -746,10 +701,47 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-58</X><Y>1</Y></Point>
+						<Point><X>-55</X><Y>0</Y></Point>
+						<Point><X>-95</X><Y>0</Y></Point>
+						<Point><X>-88</X><Y>1</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1696310557268</Id>
+					<Name><![CDATA[acomodarEnMesa]]></Name>
+					<X>290</X><Y>950</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[group]]></Name>
+						<Type><![CDATA[PedGroup]]></Type>
+					</Parameter>
+					<Body><![CDATA[System.out.println("Comienza acomodo");
+RectangularNode m=((Cliente)group.get(0)).mesa;
+double x=m.getX(), y=m.getY();
+System.out.println("x-"+x+" y-"+y);
+((Cliente)group.get(0)).moveTo(x+10, y+10);
+System.out.println("1 acomodado");
+if(group.size()>1){
+	group.get(1).moveTo(x+10, y+25);
+	System.out.println("w acomodado");
+}
+if(group.size()>2){
+	group.get(2).moveTo(x+25, y+10);
+	System.out.println("3 acomodado");
+}
+if(group.size()>3){
+	group.get(3).moveTo(x+25, y+25);
+	System.out.println("4 acomodado");
+}]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1696257183032</Id>
@@ -1864,7 +1856,7 @@
 				<EmbeddedObject>
 					<Id>1696257416362</Id>
 					<Name><![CDATA[setMesa]]></Name>
-					<X>367.333</X><Y>671.333</Y>
+					<X>327.333</X><Y>671.333</Y>
 					<Label><X>-15</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2641,6 +2633,9 @@
 							<ClassName><![CDATA[Seize]]></ClassName>
 							<ItemName><![CDATA[1412336243147]]></ItemName>
 						</GenericParameterSubstituteReference>
+						<GenericParameterSubstituteValue Class="CodeValue">
+							<Code><![CDATA[Cliente]]></Code>
+						</GenericParameterSubstituteValue>
 					</GenericParameterSubstitute>
 					<Parameters>
 						<Parameter>
@@ -2779,6 +2774,9 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onSeizeUnit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[((Mozo)unit).mesa=agent.mesa]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onPrepareUnit]]></Name>
@@ -3058,6 +3056,9 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destinationType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.DEST_POSSESSING_ENTITY]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
@@ -3207,6 +3208,9 @@
 							<ClassName><![CDATA[MoveTo]]></ClassName>
 							<ItemName><![CDATA[1412336243157]]></ItemName>
 						</GenericParameterSubstituteReference>
+						<GenericParameterSubstituteValue Class="CodeValue">
+							<Code><![CDATA[Mozo]]></Code>
+						</GenericParameterSubstituteValue>
 					</GenericParameterSubstitute>
 					<Parameters>
 						<Parameter>
@@ -3218,7 +3222,7 @@
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[mesaa]]></Code>
+								<Code><![CDATA[agent.mesa]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -3373,6 +3377,9 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[unit.mesa=null]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
@@ -3418,84 +3425,9 @@
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1696257416692</Id>
-					<Name><![CDATA[setMesaa]]></Name>
-					<X>807.333</X><Y>671.333</Y>
-					<Label><X>-15</X><Y>20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[PlainTransfer]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-							<ClassName><![CDATA[PlainTransfer]]></ClassName>
-							<ItemName><![CDATA[1412336243167]]></ItemName>
-						</GenericParameterSubstituteReference>
-						<GenericParameterSubstituteValue Class="CodeValue">
-							<Code><![CDATA[Cliente]]></Code>
-						</GenericParameterSubstituteValue>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[onAtEnter]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[mesaa=agent.mesa]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onCancelEnter]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
 					<Id>1696258883319</Id>
 					<Name><![CDATA[servicioMesa]]></Name>
-					<X>415</X><Y>650</Y>
+					<X>405</X><Y>650</Y>
 					<Label><X>5</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3540,12 +3472,6 @@
 							<Name><![CDATA[cliente]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[agent]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[mesa]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[mesa]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -3617,6 +3543,51 @@
 					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
 
 			<Presentation>
+				<Figure3D>
+					<Id>1696257204784</Id>
+					<Name><![CDATA[object3d51]]></Name>
+					<X>554</X><Y>93</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>554</X><Y>93</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[3d/sombrilla2.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[_0136_Charcoal]]></Name>
+							<OriginalColor>-14474461</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[_0005_LightPink]]></Name>
+							<OriginalColor>-4472884</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[__0137_Black_1]]></Name>
+							<OriginalColor>-16777216</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Color_E01]]></Name>
+							<OriginalColor>-11957</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Color_A25]]></Name>
+							<OriginalColor>-6249554</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>5.0</Scale>
+					<Rotation>90.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+				</Figure3D>
 				<Figure3D>
 					<Id>1696257200716</Id>
 					<Name><![CDATA[chair86]]></Name>
@@ -3738,35 +3709,6 @@
 						<Point><X>-100</X><Y>190</Y><Z>0</Z></Point>
 					</Points>
 				</Wall>
-				<Figure3D>
-					<Id>1696257200796</Id>
-					<Name><![CDATA[chair32]]></Name>
-					<X>622</X><Y>170</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>622</X><Y>170</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
 				<Figure3D>
 					<Id>1696257200810</Id>
 					<Name><![CDATA[object3d60]]></Name>
@@ -4111,35 +4053,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257201044</Id>
-					<Name><![CDATA[chair37]]></Name>
-					<X>645</X><Y>169</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>645</X><Y>169</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257201075</Id>
 					<Name><![CDATA[chair246]]></Name>
 					<X>272</X><Y>156</Y>
@@ -4368,35 +4281,6 @@
 					</Points>
 				</TargetLine>
 				<Figure3D>
-					<Id>1696257201234</Id>
-					<Name><![CDATA[chair49]]></Name>
-					<X>662</X><Y>92</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>662</X><Y>92</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257201247</Id>
 					<Name><![CDATA[object3d57]]></Name>
 					<X>763</X><Y>255</Y>
@@ -4433,13 +4317,13 @@
 				<Figure3D>
 					<Id>1696257201263</Id>
 					<Name><![CDATA[object3d16]]></Name>
-					<X>534</X><Y>104</Y>
+					<X>532.5</X><Y>104</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>534</X><Y>104</Y><Z>0</Z>
+					<X>532.5</X><Y>104</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -4887,35 +4771,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257201544</Id>
-					<Name><![CDATA[chair5]]></Name>
-					<X>526</X><Y>155</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>526</X><Y>155</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257201560</Id>
 					<Name><![CDATA[chair209]]></Name>
 					<X>732</X><Y>103</Y>
@@ -4939,35 +4794,6 @@
 					<AutoScale>true</AutoScale>
 					<Scale>0.38</Scale>
 					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257201575</Id>
-					<Name><![CDATA[chair13]]></Name>
-					<X>582</X><Y>170</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>582</X><Y>170</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
@@ -5367,13 +5193,13 @@
 				<Figure3D>
 					<Id>1696257201810</Id>
 					<Name><![CDATA[object3d3]]></Name>
-					<X>574</X><Y>155</Y>
+					<X>572.5</X><Y>155</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>574</X><Y>155</Y><Z>0</Z>
+					<X>572.5</X><Y>155</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -5427,35 +5253,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257201862</Id>
-					<Name><![CDATA[chair48]]></Name>
-					<X>662</X><Y>106</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>662</X><Y>106</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257201877</Id>
 					<Name><![CDATA[locker_3]]></Name>
 					<X>545</X><Y>515</Y>
@@ -5489,44 +5286,15 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257201893</Id>
-					<Name><![CDATA[chair9]]></Name>
-					<X>565</X><Y>155</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>565</X><Y>155</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257201909</Id>
 					<Name><![CDATA[object3d13]]></Name>
-					<X>694</X><Y>155</Y>
+					<X>692.5</X><Y>155</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>694</X><Y>155</Y><Z>0</Z>
+					<X>692.5</X><Y>155</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -5820,35 +5588,6 @@
 					<Scale>6.0</Scale>
 					<Rotation>90.0</Rotation>
 					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257202096</Id>
-					<Name><![CDATA[chair21]]></Name>
-					<X>542</X><Y>91</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>542</X><Y>91</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
@@ -6288,35 +6027,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257202362</Id>
-					<Name><![CDATA[chair4]]></Name>
-					<X>526</X><Y>169</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>526</X><Y>169</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257202377</Id>
 					<Name><![CDATA[chair215]]></Name>
 					<X>370</X><Y>155</Y>
@@ -6376,35 +6086,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257202409</Id>
-					<Name><![CDATA[chair34]]></Name>
-					<X>605</X><Y>89</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>605</X><Y>89</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257202440</Id>
 					<Name><![CDATA[chair232]]></Name>
 					<X>427</X><Y>91</Y>
@@ -6428,35 +6109,6 @@
 					<AutoScale>true</AutoScale>
 					<Scale>0.38</Scale>
 					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257202455</Id>
-					<Name><![CDATA[chair47]]></Name>
-					<X>645</X><Y>105</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>645</X><Y>105</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
@@ -7006,35 +6658,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257202893</Id>
-					<Name><![CDATA[chair36]]></Name>
-					<X>645</X><Y>155</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>645</X><Y>155</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257202909</Id>
 					<Name><![CDATA[object3d64]]></Name>
 					<X>780</X><Y>390</Y>
@@ -7316,35 +6939,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257203112</Id>
-					<Name><![CDATA[chair41]]></Name>
-					<X>662</X><Y>156</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>662</X><Y>156</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257203127</Id>
 					<Name><![CDATA[chair112]]></Name>
 					<X>605</X><Y>314</Y>
@@ -7559,13 +7153,13 @@
 				<Figure3D>
 					<Id>1696257203284</Id>
 					<Name><![CDATA[object3d23]]></Name>
-					<X>654</X><Y>105</Y>
+					<X>652.5</X><Y>105</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>654</X><Y>105</Y><Z>0</Z>
+					<X>652.5</X><Y>105</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -7770,13 +7364,13 @@
 				<Figure3D>
 					<Id>1696257203440</Id>
 					<Name><![CDATA[object3d12]]></Name>
-					<X>694</X><Y>169</Y>
+					<X>692.5</X><Y>169</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>694</X><Y>169</Y><Z>0</Z>
+					<X>692.5</X><Y>169</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -7998,64 +7592,6 @@
 					<Scale>6.0</Scale>
 					<Rotation>90.0</Rotation>
 					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257203690</Id>
-					<Name><![CDATA[chair52]]></Name>
-					<X>702</X><Y>106</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>702</X><Y>106</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257203706</Id>
-					<Name><![CDATA[chair28]]></Name>
-					<X>525</X><Y>104</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>525</X><Y>104</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
@@ -8844,35 +8380,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257204377</Id>
-					<Name><![CDATA[chair6]]></Name>
-					<X>543</X><Y>156</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>543</X><Y>156</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257204409</Id>
 					<Name><![CDATA[chair169]]></Name>
 					<X>845</X><Y>339</Y>
@@ -9087,13 +8594,13 @@
 				<Figure3D>
 					<Id>1696257204596</Id>
 					<Name><![CDATA[object3d10]]></Name>
-					<X>654</X><Y>169</Y>
+					<X>652.5</X><Y>169</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>654</X><Y>169</Y><Z>0</Z>
+					<X>652.5</X><Y>169</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -9118,73 +8625,15 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257204628</Id>
-					<Name><![CDATA[chair53]]></Name>
-					<X>702</X><Y>92</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>702</X><Y>92</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257204643</Id>
-					<Name><![CDATA[chair12]]></Name>
-					<X>565</X><Y>169</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>565</X><Y>169</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257204674</Id>
 					<Name><![CDATA[object3d17]]></Name>
-					<X>534</X><Y>90</Y>
+					<X>532.5</X><Y>90</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>534</X><Y>90</Y><Z>0</Z>
+					<X>532.5</X><Y>90</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -9263,80 +8712,6 @@
 					<Scale>0.38</Scale>
 					<Rotation>270.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257204753</Id>
-					<Name><![CDATA[chair29]]></Name>
-					<X>542</X><Y>105</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>542</X><Y>105</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257204784</Id>
-					<Name><![CDATA[object3d51]]></Name>
-					<X>554</X><Y>93</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>554</X><Y>93</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/sombrilla2.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[_0136_Charcoal]]></Name>
-							<OriginalColor>-14474461</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[_0005_LightPink]]></Name>
-							<OriginalColor>-4472884</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[__0137_Black_1]]></Name>
-							<OriginalColor>-16777216</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Color_E01]]></Name>
-							<OriginalColor>-11957</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[Color_A25]]></Name>
-							<OriginalColor>-6249554</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>5.0</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
@@ -9552,13 +8927,13 @@
 				<Figure3D>
 					<Id>1696257205023</Id>
 					<Name><![CDATA[object3d1]]></Name>
-					<X>535</X><Y>155</Y>
+					<X>532.5</X><Y>155</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>535</X><Y>155</Y><Z>0</Z>
+					<X>532.5</X><Y>155</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -9632,35 +9007,6 @@
 							<Name><![CDATA[material0]]></Name>
 							<OriginalColor>-3094341</OriginalColor>
 							<Color>-16777216</Color>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257205102</Id>
-					<Name><![CDATA[chair38]]></Name>
-					<X>622</X><Y>104</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>622</X><Y>104</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
 						</ColorMapping>
 					</ColorTable>
 					<AutoScale>true</AutoScale>
@@ -10121,68 +9467,6 @@
 					<AutoScale>true</AutoScale>
 					<Scale>0.38</Scale>
 					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257205524</Id>
-					<Name><![CDATA[object3d4]]></Name>
-					<X>574</X><Y>169</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>574</X><Y>169</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/table_cafe.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[Steel-BRP_Bison-]]></Name>
-							<OriginalColor>-9680098</OriginalColor>
-						</ColorMapping>
-						<ColorMapping>
-							<Name><![CDATA[material]]></Name>
-							<OriginalColor>-5130306</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>6.0</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257205555</Id>
-					<Name><![CDATA[chair40]]></Name>
-					<X>662</X><Y>170</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>662</X><Y>170</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
@@ -10769,64 +10053,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257206164</Id>
-					<Name><![CDATA[chair7]]></Name>
-					<X>543</X><Y>170</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>543</X><Y>170</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257206195</Id>
-					<Name><![CDATA[chair35]]></Name>
-					<X>605</X><Y>103</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>605</X><Y>103</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257206227</Id>
 					<Name><![CDATA[chair159]]></Name>
 					<X>808</X><Y>339</Y>
@@ -10850,35 +10076,6 @@
 					<AutoScale>true</AutoScale>
 					<Scale>0.38</Scale>
 					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257206274</Id>
-					<Name><![CDATA[chair44]]></Name>
-					<X>702</X><Y>170</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>702</X><Y>170</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
@@ -10920,13 +10117,13 @@
 				<Figure3D>
 					<Id>1696257206336</Id>
 					<Name><![CDATA[object3d24]]></Name>
-					<X>654</X><Y>91</Y>
+					<X>652.5</X><Y>91</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>654</X><Y>91</Y><Z>0</Z>
+					<X>652.5</X><Y>91</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -10984,35 +10181,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257206430</Id>
-					<Name><![CDATA[chair43]]></Name>
-					<X>685</X><Y>169</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>685</X><Y>169</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257206461</Id>
 					<Name><![CDATA[object3d37]]></Name>
 					<X>655</X><Y>255</Y>
@@ -11048,13 +10216,13 @@
 				<Figure3D>
 					<Id>1696257206508</Id>
 					<Name><![CDATA[object3d18]]></Name>
-					<X>574</X><Y>104</Y>
+					<X>572.5</X><Y>104</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>574</X><Y>104</Y><Z>0</Z>
+					<X>572.5</X><Y>104</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -11325,35 +10493,6 @@
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<X>255</X><Y>155</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257206852</Id>
-					<Name><![CDATA[chair26]]></Name>
-					<X>605</X><Y>155</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>605</X><Y>155</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -11664,35 +10803,6 @@
 					<AutoScale>true</AutoScale>
 					<Scale>0.38</Scale>
 					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257207242</Id>
-					<Name><![CDATA[chair27]]></Name>
-					<X>605</X><Y>169</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>605</X><Y>169</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
@@ -12129,35 +11239,6 @@
 					<Rotation>90.0</Rotation>
 				</RectangleNode>
 				<Figure3D>
-					<Id>1696257207664</Id>
-					<Name><![CDATA[chair45]]></Name>
-					<X>702</X><Y>156</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>702</X><Y>156</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257207695</Id>
 					<Name><![CDATA[chair190]]></Name>
 					<X>827</X><Y>90</Y>
@@ -12248,35 +11329,6 @@
 					<Scale>6.0</Scale>
 					<Rotation>90.0</Rotation>
 					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257207805</Id>
-					<Name><![CDATA[chair8]]></Name>
-					<X>582</X><Y>156</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>582</X><Y>156</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
@@ -12454,35 +11506,6 @@
 					<AutoScale>true</AutoScale>
 					<Scale>0.38</Scale>
 					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257208075</Id>
-					<Name><![CDATA[chair42]]></Name>
-					<X>685</X><Y>155</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>685</X><Y>155</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
 					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
@@ -12899,35 +11922,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257208669</Id>
-					<Name><![CDATA[chair50]]></Name>
-					<X>685</X><Y>91</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>685</X><Y>91</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257208716</Id>
 					<Name><![CDATA[object3d88]]></Name>
 					<X>746</X><Y>326</Y>
@@ -12996,13 +11990,13 @@
 				<Figure3D>
 					<Id>1696257208794</Id>
 					<Name><![CDATA[object3d22]]></Name>
-					<X>614</X><Y>89</Y>
+					<X>612.5</X><Y>89</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>614</X><Y>89</Y><Z>0</Z>
+					<X>612.5</X><Y>89</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -13062,13 +12056,13 @@
 				<Figure3D>
 					<Id>1696257208872</Id>
 					<Name><![CDATA[object3d20]]></Name>
-					<X>614</X><Y>103</Y>
+					<X>612.5</X><Y>103</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>614</X><Y>103</Y><Z>0</Z>
+					<X>612.5</X><Y>103</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -13247,35 +12241,6 @@
 					<Height>145</Height>
 					<Rotation>90.0</Rotation>
 				</RectangleNode>
-				<Figure3D>
-					<Id>1696257208982</Id>
-					<Name><![CDATA[chair33]]></Name>
-					<X>622</X><Y>156</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>622</X><Y>156</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
 				<OvalWall>
 					<Id>1696257209029</Id>
 					<Name><![CDATA[wall8]]></Name>
@@ -13305,35 +12270,6 @@
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<X>772</X><Y>375</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257209075</Id>
-					<Name><![CDATA[chair30]]></Name>
-					<X>565</X><Y>104</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>565</X><Y>104</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -13735,35 +12671,6 @@
 					<RadiusY>20</RadiusY>
 				</OvalWall>
 				<Figure3D>
-					<Id>1696257209669</Id>
-					<Name><![CDATA[chair31]]></Name>
-					<X>582</X><Y>105</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>582</X><Y>105</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257209716</Id>
 					<Name><![CDATA[chair220]]></Name>
 					<X>292</X><Y>104</Y>
@@ -14040,13 +12947,13 @@
 				<Figure3D>
 					<Id>1696257210122</Id>
 					<Name><![CDATA[object3d2]]></Name>
-					<X>535</X><Y>169</Y>
+					<X>532.5</X><Y>169</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>535</X><Y>169</Y><Z>0</Z>
+					<X>532.5</X><Y>169</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -14196,35 +13103,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257210357</Id>
-					<Name><![CDATA[chair39]]></Name>
-					<X>622</X><Y>90</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>622</X><Y>90</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257210404</Id>
 					<Name><![CDATA[chair120]]></Name>
 					<X>755</X><Y>209</Y>
@@ -14316,13 +13194,13 @@
 				<Figure3D>
 					<Id>1696257210544</Id>
 					<Name><![CDATA[object3d11]]></Name>
-					<X>654</X><Y>155</Y>
+					<X>652.5</X><Y>155</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>654</X><Y>155</Y><Z>0</Z>
+					<X>652.5</X><Y>155</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -14442,13 +13320,13 @@
 				<Figure3D>
 					<Id>1696257210732</Id>
 					<Name><![CDATA[object3d19]]></Name>
-					<X>574</X><Y>90</Y>
+					<X>572.5</X><Y>90</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>574</X><Y>90</Y><Z>0</Z>
+					<X>572.5</X><Y>90</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -15078,44 +13956,15 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257211595</Id>
-					<Name><![CDATA[chair22]]></Name>
-					<X>565</X><Y>90</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>565</X><Y>90</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257211642</Id>
 					<Name><![CDATA[object3d7]]></Name>
-					<X>614</X><Y>169</Y>
+					<X>612.5</X><Y>169</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>614</X><Y>169</Y><Z>0</Z>
+					<X>612.5</X><Y>169</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -15572,35 +14421,6 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257212345</Id>
-					<Name><![CDATA[chair51]]></Name>
-					<X>685</X><Y>105</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>685</X><Y>105</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257212408</Id>
 					<Name><![CDATA[chair158]]></Name>
 					<X>862</X><Y>295</Y>
@@ -15692,44 +14512,15 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257212564</Id>
-					<Name><![CDATA[chair23]]></Name>
-					<X>582</X><Y>91</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>582</X><Y>91</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>90.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257212611</Id>
 					<Name><![CDATA[object3d25]]></Name>
-					<X>694</X><Y>105</Y>
+					<X>692.5</X><Y>105</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>694</X><Y>105</Y><Z>0</Z>
+					<X>692.5</X><Y>105</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -16106,44 +14897,15 @@
 					<IgnoreSceneLights>false</IgnoreSceneLights>
 				</Figure3D>
 				<Figure3D>
-					<Id>1696257213345</Id>
-					<Name><![CDATA[chair46]]></Name>
-					<X>645</X><Y>91</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>645</X><Y>91</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
 					<Id>1696257213392</Id>
 					<Name><![CDATA[object3d8]]></Name>
-					<X>614</X><Y>155</Y>
+					<X>612.5</X><Y>155</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>614</X><Y>155</Y><Z>0</Z>
+					<X>612.5</X><Y>155</Y><Z>0</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ResourceReference>
 						<PackageName><![CDATA[resto]]></PackageName>
@@ -16163,35 +14925,6 @@
 					<Scale>6.0</Scale>
 					<Rotation>90.0</Rotation>
 					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
-					<ApplyShading>true</ApplyShading>
-					<InternalLighting>OFF</InternalLighting>
-					<IgnoreSceneLights>false</IgnoreSceneLights>
-				</Figure3D>
-				<Figure3D>
-					<Id>1696257213455</Id>
-					<Name><![CDATA[chair20]]></Name>
-					<X>525</X><Y>90</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<X>525</X><Y>90</Y><Z>0</Z>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<ResourceReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[3d/chair.dae]]></ClassName>
-					</ResourceReference>
-					<ColorTable>
-						<ColorMapping>
-							<Name><![CDATA[material0]]></Name>
-							<OriginalColor>-3094341</OriginalColor>
-						</ColorMapping>
-					</ColorTable>
-					<AutoScale>true</AutoScale>
-					<Scale>0.38</Scale>
-					<Rotation>270.0</Rotation>
-					<AxisOrder>XYZ_AXIS_ORDER</AxisOrder>
 					<ApplyShading>true</ApplyShading>
 					<InternalLighting>OFF</InternalLighting>
 					<IgnoreSceneLights>false</IgnoreSceneLights>
@@ -16543,7 +15276,7 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257213883</Id>
@@ -16567,7 +15300,7 @@
 				<Path SourceId="1696257213907" TargetId="1696257213934">
 					<Id>1696257213905</Id>
 					<Name><![CDATA[path6]]></Name>
-					<X>565</X><Y>132</Y>
+					<X>565</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -16603,7 +15336,7 @@
 				<PointNode>
 					<Id>1696257213907</Id>
 					<Name><![CDATA[node1]]></Name>
-					<X>570</X><Y>132</Y>
+					<X>570</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -16623,7 +15356,7 @@
 				<Path SourceId="1696257213907" TargetId="1696257213912">
 					<Id>1696257213909</Id>
 					<Name><![CDATA[path5]]></Name>
-					<X>570</X><Y>137</Y>
+					<X>570</X><Y>135</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -16643,9 +15376,9 @@
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>-25</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>8</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-17</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-22</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>10</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>-15</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>-20</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -16770,7 +15503,7 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257213910</Id>
@@ -16794,7 +15527,7 @@
 				<Path SourceId="1696257213934" TargetId="1696257213885">
 					<Id>1696257213932</Id>
 					<Name><![CDATA[path13]]></Name>
-					<X>540</X><Y>137</Y>
+					<X>540</X><Y>135</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -16814,9 +15547,9 @@
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>25</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>8</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-17</Y><Z>0</Z></Point>
-						<Point><X>25</X><Y>8</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>10</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>-15</Y><Z>0</Z></Point>
+						<Point><X>25</X><Y>10</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -16830,7 +15563,7 @@
 				<PointNode>
 					<Id>1696257213934</Id>
 					<Name><![CDATA[node3]]></Name>
-					<X>540</X><Y>132</Y>
+					<X>540</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -16850,7 +15583,7 @@
 				<Path SourceId="1696257213934" TargetId="1696257213939">
 					<Id>1696257213936</Id>
 					<Name><![CDATA[path12]]></Name>
-					<X>540</X><Y>127</Y>
+					<X>540</X><Y>125</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -16870,9 +15603,9 @@
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>-25</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-12</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>13</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>18</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>-10</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>15</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>20</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -16997,7 +15730,59 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
+
+			<Presentation>
+				<Attractor>
+					<Id>1696305391679</Id>
+					<Name><![CDATA[attractor]]></Name>
+					<X>-11.666666666666666</X><Y>11.666666666666666</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>180.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305391681</Id>
+					<Name><![CDATA[attractor1]]></Name>
+					<X>-11.666666666666664</X><Y>23.333333333333332</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>180.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305391683</Id>
+					<Name><![CDATA[attractor2]]></Name>
+					<X>-23.333333333333332</X><Y>11.666666666666668</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305391685</Id>
+					<Name><![CDATA[attractor3]]></Name>
+					<X>-23.333333333333332</X><Y>23.333333333333332</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>	
+				</Attractor>
+			</Presentation>
+
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257213937</Id>
@@ -17041,9 +15826,9 @@
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
 						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>12</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-13</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-13</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>10</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>-15</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>-15</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -17091,6 +15876,9 @@
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[accessRestrictionType]]></Name>
+								<Value Class="CodeValue">
+									<Code><![CDATA[AREA_ACCESS_RESTRICTION_MANUAL]]></Code>
+								</Value>
 							</Parameter>
 							<Parameter>
 								<Name><![CDATA[accessRestrictionCondition]]></Name>
@@ -17168,7 +15956,59 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
+
+			<Presentation>
+				<Attractor>
+					<Id>1696305421266</Id>
+					<Name><![CDATA[attractor4]]></Name>
+					<X>-11.666666666666666</X><Y>11.666666666666666</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>180.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305421268</Id>
+					<Name><![CDATA[attractor5]]></Name>
+					<X>-11.666666666666664</X><Y>23.333333333333332</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>180.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305421270</Id>
+					<Name><![CDATA[attractor6]]></Name>
+					<X>-23.333333333333332</X><Y>11.666666666666668</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305421272</Id>
+					<Name><![CDATA[attractor7]]></Name>
+					<X>-23.333333333333332</X><Y>23.333333333333332</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>	
+				</Attractor>
+			</Presentation>
+
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257213960</Id>
@@ -17192,7 +16032,7 @@
 				<Path SourceId="1696257213907" TargetId="1696257214082">
 					<Id>1696257213982</Id>
 					<Name><![CDATA[path]]></Name>
-					<X>574.642</X><Y>130.143</Y>
+					<X>575</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -17210,11 +16050,11 @@
 					</Width>
 					<Points>
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>25</X><Y>-0.045</Y><Z>0</Z></Point>
-						<Point><X>25</X><Y>-0.045</Y><Z>0</Z></Point>
-						<Point><X>35.358</X><Y>-0.063</Y><Z>0</Z></Point>
-						<Point><X>10.358</X><Y>-0.018</Y><Z>0</Z></Point>
-						<Point><X>10.358</X><Y>-0.018</Y><Z>0</Z></Point>
+						<Point><X>25</X><Y>0.05699999999999994</Y><Z>0</Z></Point>
+						<Point><X>25</X><Y>0.05699999999999994</Y><Z>0</Z></Point>
+						<Point><X>35</X><Y>0.08000000000000007</Y><Z>0</Z></Point>
+						<Point><X>10</X><Y>0.02299999999999991</Y><Z>0</Z></Point>
+						<Point><X>10</X><Y>0.02299999999999991</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -17395,7 +16235,59 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
+
+			<Presentation>
+				<Attractor>
+					<Id>1696305482545</Id>
+					<Name><![CDATA[attractor12]]></Name>
+					<X>-11.666666666666666</X><Y>11.666666666666666</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>180.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305482547</Id>
+					<Name><![CDATA[attractor13]]></Name>
+					<X>-11.666666666666664</X><Y>23.333333333333332</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>180.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305482549</Id>
+					<Name><![CDATA[attractor14]]></Name>
+					<X>-23.333333333333332</X><Y>11.666666666666668</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305482551</Id>
+					<Name><![CDATA[attractor15]]></Name>
+					<X>-23.333333333333332</X><Y>23.333333333333332</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>	
+				</Attractor>
+			</Presentation>
+
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257213987</Id>
@@ -17413,7 +16305,7 @@
 					</Slope>
 
 					<Width>35</Width>
-					<Height>34</Height>
+					<Height>35</Height>
 					<Rotation>90.0</Rotation>
 				</RectangleNode>
 				<Path SourceId="1696257213984" TargetId="1696257214011">
@@ -17622,7 +16514,7 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257214014</Id>
@@ -17793,7 +16685,7 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257214037</Id>
@@ -17964,7 +16856,7 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257214060</Id>
@@ -18155,7 +17047,59 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
+
+			<Presentation>
+				<Attractor>
+					<Id>1696305463441</Id>
+					<Name><![CDATA[attractor8]]></Name>
+					<X>-11.666666666666666</X><Y>11.666666666666666</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>180.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305463443</Id>
+					<Name><![CDATA[attractor9]]></Name>
+					<X>-11.666666666666664</X><Y>23.333333333333332</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>180.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305463445</Id>
+					<Name><![CDATA[attractor10]]></Name>
+					<X>-23.333333333333332</X><Y>11.666666666666668</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>	
+				</Attractor>
+				<Attractor>
+					<Id>1696305463447</Id>
+					<Name><![CDATA[attractor11]]></Name>
+					<X>-23.333333333333332</X><Y>23.333333333333332</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>	
+				</Attractor>
+			</Presentation>
+
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257214085</Id>
@@ -18251,7 +17195,7 @@
 				<RectangleNode>
 					<Id>1696257214112</Id>
 					<Name><![CDATA[TableNode7]]></Name>
-					<X>635</X><Y>145</Y>
+					<X>630</X><Y>145</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -18362,7 +17306,7 @@
 					<LineMaterial>null</LineMaterial>
 					<FillMaterial>null</FillMaterial>
 					<LineStyle>DASHED</LineStyle>
-					<AttractorsLayout>random</AttractorsLayout>
+					<AttractorsLayout>arranged</AttractorsLayout>
 					<Sloped>false</Sloped>
 					<Slope>
 						<Id>1696257214110</Id>
@@ -18380,13 +17324,13 @@
 					</Slope>
 
 					<Width>35</Width>
-					<Height>40</Height>
+					<Height>35</Height>
 					<Rotation>90.0</Rotation>
 				</RectangleNode>
 				<Path SourceId="1696257213934" TargetId="1696257214134">
 					<Id>1696257214132</Id>
 					<Name><![CDATA[path4]]></Name>
-					<X>535.358</X><Y>130.143</Y>
+					<X>535</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -18404,11 +17348,11 @@
 					</Width>
 					<Points>
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>23.836</X><Y>-7.538</Y><Z>0</Z></Point>
-						<Point><X>-23.755</X><Y>7.793</Y><Z>0</Z></Point>
-						<Point><X>-16.414</X><Y>5.385</Y><Z>0</Z></Point>
-						<Point><X>7.34</X><Y>-2.408</Y><Z>0</Z></Point>
-						<Point><X>19.69</X><Y>10.715</Y><Z>0</Z></Point>
+						<Point><X>-25</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-25</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-45</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-20</X><Y>0</Y><Z>0</Z></Point>
+						<Point><X>-20</X><Y>0</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -18422,7 +17366,7 @@
 				<PointNode>
 					<Id>1696257214134</Id>
 					<Name><![CDATA[node6]]></Name>
-					<X>510</X><Y>140</Y>
+					<X>485</X><Y>130</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -18432,7 +17376,7 @@
 					<FakeNode>false</FakeNode>	
 					<Lock>false</Lock>
 					<Color>-14774017</Color>
-					<Radius>10</Radius>
+					<Radius>5</Radius>
 					<SpeedLimit>false</SpeedLimit>
 					<SpeedLimitValue Class="UnitValue">
 						<Value Class="Double">10</Value>
@@ -18442,7 +17386,7 @@
 				<Path SourceId="1696257214134" TargetId="1696257214138">
 					<Id>1696257214136</Id>
 					<Name><![CDATA[path18]]></Name>
-					<X>505.528</X><Y>148.944</Y>
+					<X>484.9999320225002</X><Y>135.00013595499956</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -18460,11 +17404,11 @@
 					</Width>
 					<Points>
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>6.348</X><Y>-24.181</Y><Z>0</Z></Point>
-						<Point><X>-5.188</X><Y>24.456</Y><Z>0</Z></Point>
-						<Point><X>-5.528</X><Y>26.056</Y><Z>0</Z></Point>
-						<Point><X>-0.34</X><Y>1.6</Y><Z>0</Z></Point>
-						<Point><X>-24.734</X><Y>5.051</Y><Z>0</Z></Point>
+						<Point><X>6.347999999999999</X><Y>-24.180999999999997</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>40</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>15</Y><Z>0</Z></Point>
+						<Point><X>-19.206</X><Y>18.995</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -18478,7 +17422,7 @@
 				<PointNode>
 					<Id>1696257214138</Id>
 					<Name><![CDATA[waitressP1]]></Name>
-					<X>500</X><Y>180</Y>
+					<X>485</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -18498,7 +17442,7 @@
 				<Path SourceId="1696257214138" TargetId="1696257214142">
 					<Id>1696257214140</Id>
 					<Name><![CDATA[path1]]></Name>
-					<X>500</X><Y>185</Y>
+					<X>485</X><Y>185</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -18516,11 +17460,11 @@
 					</Width>
 					<Points>
 						<Point><X>0</X><Y>0</Y><Z>0</Z></Point>
-						<Point><X>4.11</X><Y>-24.66</Y><Z>0</Z></Point>
-						<Point><X>-4.345</X><Y>24.62</Y><Z>0</Z></Point>
-						<Point><X>-15</X><Y>85</Y><Z>0</Z></Point>
-						<Point><X>-10.655</X><Y>60.38</Y><Z>0</Z></Point>
-						<Point><X>0</X><Y>-5</Y><Z>0</Z></Point>
+						<Point><X>4.109999999999999</X><Y>-24.66</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>25</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>85</Y><Z>0</Z></Point>
+						<Point><X>0</X><Y>60</Y><Z>0</Z></Point>
+						<Point><X>15</X><Y>-5</Y><Z>0</Z></Point>
 					</Points>
 					<Bidirectional>true</Bidirectional>
 					<SpeedLimit>false</SpeedLimit>
@@ -18838,7 +17782,7 @@
 				<Control Type="Window3D">
 					<Id>1696259145555</Id>
 					<Name><![CDATA[window3d]]></Name>
-					<X>100</X><Y>1060</Y>
+					<X>80</X><Y>1060</Y>
 					<Width>500</Width>
 					<Height>300</Height>
 					<MakeDefaultViewArea>true</MakeDefaultViewArea>
@@ -18849,6 +17793,72 @@
 					<FarClippingDistance>2000</FarClippingDistance>
 					<Camera>camera</Camera>
 				</Control>
+				<Figure3D>
+					<Id>1696267785399</Id>
+					<Name><![CDATA[object3d4]]></Name>
+					<X>572.5</X><Y>169.25</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>572.5</X><Y>169.25</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[3d/table_cafe.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[Steel-BRP_Bison-]]></Name>
+							<OriginalColor>-9680098</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[material]]></Name>
+							<OriginalColor>-5130306</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>6.0</Scale>
+					<Rotation>90.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+				</Figure3D>
+				<Figure3D>
+					<Id>1696267887658</Id>
+					<Name><![CDATA[object3d132]]></Name>
+					<X>692.5</X><Y>91</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>692.5</X><Y>91</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[3d/table_cafe.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[Steel-BRP_Bison-]]></Name>
+							<OriginalColor>-9680098</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[material]]></Name>
+							<OriginalColor>-5130306</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>6.0</Scale>
+					<Rotation>90.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+				</Figure3D>
 			</Presentation>
 
 				</Level>
@@ -19384,6 +18394,23 @@
 			</ScaleRuler>
 			<CurrentLevel>1696257664994</CurrentLevel>
 			<ConnectionsId>1696257664998</ConnectionsId>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1696312780268</Id>
+					<Name><![CDATA[mesa]]></Name>
+					<X>102</X><Y>65</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[RectangularNode]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[null]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+			</Variables>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1696257664998</Id>
@@ -19745,27 +18772,6 @@ T agent - the agent. ]]></Description>
 					</Properties>                 
 				</Variable>
 				<Variable Class="Parameter">
-					<Id>1696257674003</Id>
-					<Name><![CDATA[mesa]]></Name>
-					<X>50</X><Y>310</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="DYNAMIC">
-						<Type><![CDATA[RectangularNode]]></Type>
-						<UnitType><![CDATA[NONE]]></UnitType>
-						<SdArray>false</SdArray>
-						<ParameterEditor>
-							<Id>1696257674001</Id>
-							<EditorContolType>ELEMENT_CHOOSER</EditorContolType>
-							<MinSliderValue><![CDATA[0]]></MinSliderValue>
-							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
-							<DelimeterType>NO_DELIMETER</DelimeterType>
-						</ParameterEditor>
-					</Properties>                 
-				</Variable>
-				<Variable Class="Parameter">
 					<Id>1696257674006</Id>
 					<Name><![CDATA[bebidas]]></Name>
 					<Description><![CDATA[Ubicacion donde se recojen las bebidas]]></Description>
@@ -19948,72 +18954,6 @@ T agent - the agent. ]]></Description>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>-25</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1696257673966</Id>
-					<Name><![CDATA[connector9]]></Name>
-					<X>620</X><Y>320</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[ServicioMesa]]></ClassName>
-						<ItemName><![CDATA[atencionT]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[ServicioMesa]]></ClassName>
-						<ItemName><![CDATA[entregaPedido]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Release]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>30</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1696257673968</Id>
-					<Name><![CDATA[connector2]]></Name>
-					<X>530</X><Y>320</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[ServicioMesa]]></ClassName>
-						<ItemName><![CDATA[atenderMesa]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Seize]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[resto]]></PackageName>
-						<ClassName><![CDATA[ServicioMesa]]></ClassName>
-						<ItemName><![CDATA[atencionT]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>50</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -20234,6 +19174,72 @@ T agent - the agent. ]]></Description>
 						<Point><X>-30</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
+				<Connector>
+					<Id>1696305045484</Id>
+					<Name><![CDATA[connector2]]></Name>
+					<X>530</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[ServicioMesa]]></ClassName>
+						<ItemName><![CDATA[atenderMesa]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Seize]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[ServicioMesa]]></ClassName>
+						<ItemName><![CDATA[atencionT]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedWait]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1696305045486</Id>
+					<Name><![CDATA[connector9]]></Name>
+					<X>610</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[ServicioMesa]]></ClassName>
+						<ItemName><![CDATA[atencionT]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedWait]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[ServicioMesa]]></ClassName>
+						<ItemName><![CDATA[entregaPedido]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Release]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>40</X><Y>0</Y></Point>
+					</Points>
+				</Connector>
 			</Connectors>
 			<AgentLinks>
 				<AgentLink>
@@ -20339,7 +19345,7 @@ T agent - the agent. ]]></Description>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[System.out.println("Cliente en mesa");]]></Code>
+								<Code><![CDATA[//System.out.println("Cliente en mesa");]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -20506,6 +19512,9 @@ T agent - the agent. ]]></Description>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[unit.mesa=null]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
@@ -20642,7 +19651,7 @@ T agent - the agent. ]]></Description>
 						<Parameter>
 							<Name><![CDATA[entityLocationQueue]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[mesa()]]></Code>
+								<Code><![CDATA[//mesa()]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -20671,6 +19680,9 @@ T agent - the agent. ]]></Description>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[resourceSelectionMode]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.RESOURCE_SELECTION_NEAREST]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[resourceRating]]></Name>
@@ -20725,6 +19737,9 @@ T agent - the agent. ]]></Description>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onSeizeUnit]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[((Mozo)unit).mesa=agent.mesa]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onPrepareUnit]]></Name>
@@ -20749,108 +19764,6 @@ T agent - the agent. ]]></Description>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onUnitFinishedWrapUp]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1696257673738</Id>
-					<Name><![CDATA[atencionT]]></Name>
-					<X>580</X><Y>300</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-							<ClassName><![CDATA[Delay]]></ClassName>
-							<ItemName><![CDATA[1412336242930]]></ItemName>
-						</GenericParameterSubstituteReference>
-						<GenericParameterSubstituteValue Class="CodeValue">
-							<Code><![CDATA[Cliente]]></Code>
-						</GenericParameterSubstituteValue>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[type]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maximumCapacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[entityLocation]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[mesa()]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[pushProtocol]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[forceStatisticsCollection]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEnter]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onAtExit]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onExit]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRemove]]></Name>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>false</ReplicationFlag>
@@ -21031,6 +19944,9 @@ T agent - the agent. ]]></Description>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destinationType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.DEST_POSSESSING_ENTITY]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
@@ -21116,7 +20032,7 @@ T agent - the agent. ]]></Description>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[System.out.println("Mozo a mesa");]]></Code>
+								<Code><![CDATA[//System.out.println("Mozo a mesa");]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -21515,7 +20431,8 @@ T agent - the agent. ]]></Description>
 						<Parameter>
 							<Name><![CDATA[onChangeFormation]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[for(Agent c:group){
+								<Code><![CDATA[//main.acomodarEnMesa(group);
+for(Agent c:group){
 	((Cliente)c).sentado=true;
 }]]></Code>
 							</Value>
@@ -21745,7 +20662,7 @@ T agent - the agent. ]]></Description>
 						<Parameter>
 							<Name><![CDATA[destinationNode]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[mesa()]]></Code>
+								<Code><![CDATA[agent.mesa]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -21828,6 +20745,133 @@ T agent - the agent. ]]></Description>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1696304893477</Id>
+					<Name><![CDATA[atencionT]]></Name>
+					<X>570</X><Y>310</Y>
+					<Label><X>-5</X><Y>35</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedWait]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+							<ClassName><![CDATA[PedWait]]></ClassName>
+							<ItemName><![CDATA[1412464601107]]></ItemName>
+						</GenericParameterSubstituteReference>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[locationType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationNode]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[ped.mesa]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[attractorChoice]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[attractor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationLine]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[locationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayTimeout]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[triangular( 0.5, 1, 1.5 )]]></Code>
+								<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[waitForGroup]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[delayStartsWhen]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[maximumCapacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[capacity]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[targetReachTolerance]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onBeginWait]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onAtExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onCancel]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
@@ -21963,6 +21007,290 @@ T agent - the agent. ]]></Description>
 			</Presentation>
 
 		</ActiveObjectClass>
+		<!--   =========   Active Object Class   ========  -->
+		<ActiveObjectClass>
+			<Id>1696264168440</Id>
+			<Name><![CDATA[Mesa]]></Name>
+			<Generic>false</Generic>
+			<GenericParameter>
+				<Id>1696264168446</Id>
+				<Name><![CDATA[1696264168446]]></Name>
+				<GenericParameterValue Class="CodeValue">
+					<Code><![CDATA[T extends Agent]]></Code>
+				</GenericParameterValue>
+				<GenericParameterLabel><![CDATA[Generic parameter:]]></GenericParameterLabel>
+			</GenericParameter>
+			<FlowChartsUsage>ENTITY</FlowChartsUsage>
+			<SamplesToKeep>100</SamplesToKeep>
+			<LimitNumberOfArrayElements>false</LimitNumberOfArrayElements>
+			<ElementsLimitValue>100</ElementsLimitValue>
+			<MakeDefaultViewArea>true</MakeDefaultViewArea>
+			<SceneGridColor/>
+			<SceneBackgroundColor/>
+			<SceneSkybox>null</SceneSkybox>
+			<AgentProperties>
+				<EnvironmentDefinesInitialLocation>true</EnvironmentDefinesInitialLocation>
+				<RotateAnimationTowardsMovement>true</RotateAnimationTowardsMovement>
+				<RotateAnimationVertically>false</RotateAnimationVertically>
+				<VelocityCode Class="CodeUnitValue">
+					<Code><![CDATA[10]]></Code>
+					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+				</VelocityCode>
+				<PhysicalLength Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalLength>
+				<PhysicalWidth Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalWidth>
+				<PhysicalHeight Class="CodeUnitValue">
+					<Code><![CDATA[1]]></Code>
+					<Unit Class="LengthUnits"><![CDATA[METER]]></Unit>
+				</PhysicalHeight>
+			</AgentProperties>
+			<EnvironmentProperties>
+					<EnableSteps>false</EnableSteps>
+					<StepDurationCode Class="CodeUnitValue">
+						<Code><![CDATA[1.0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</StepDurationCode>
+					<SpaceType>CONTINUOUS</SpaceType>
+					<WidthCode><![CDATA[500]]></WidthCode>
+					<HeightCode><![CDATA[500]]></HeightCode>
+					<ZHeightCode><![CDATA[0]]></ZHeightCode>
+					<ColumnsCountCode><![CDATA[100]]></ColumnsCountCode>
+					<RowsCountCode><![CDATA[100]]></RowsCountCode>
+					<NeigborhoodType>MOORE</NeigborhoodType>
+					<LayoutType>USER_DEF</LayoutType>
+					<LayoutTypeApplyOnStartup>true</LayoutTypeApplyOnStartup>
+					<NetworkType>USER_DEF</NetworkType>
+					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
+					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
+					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
+					<MCode><![CDATA[10]]></MCode>
+			</EnvironmentProperties>
+			<DatasetsCreationProperties>
+				<AutoCreate>true</AutoCreate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1696320000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</RecurrenceCode>
+			</DatasetsCreationProperties>
+			<ScaleRuler>
+				<Id>1696264168443</Id>
+				<Name><![CDATA[scale]]></Name>
+				<X>0</X><Y>-150</Y>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>false</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<Length>100</Length>
+				<Rotation>0</Rotation>
+				<ScaleType>BASED_ON_LENGTH</ScaleType>
+				<ModelLength>10</ModelLength>
+				<LengthUnits>METER</LengthUnits>
+				<Scale>10</Scale>
+				<InheritedFromParentAgentType>true</InheritedFromParentAgentType>
+			</ScaleRuler>
+			<CurrentLevel>1696264168447</CurrentLevel>
+			<ConnectionsId>1696264168441</ConnectionsId>
+			<AgentLinks>
+				<AgentLink>
+					<Id>1696264168441</Id>
+					<Name><![CDATA[connections]]></Name>
+					<X>50</X><Y>-50</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<HandleReceiveInConnections>false</HandleReceiveInConnections>
+					<AgentLinkType>COLLECTION_OF_LINKS</AgentLinkType>
+					<AgentLinkBidirectional>true</AgentLinkBidirectional>
+					<MessageType><![CDATA[Object]]></MessageType>
+					<LineStyle>SOLID</LineStyle>
+					<LineWidth>1</LineWidth>
+					<LineColor>-16777216</LineColor>
+					<LineZOrder>UNDER_AGENTS</LineZOrder>
+					<LineArrow>NONE</LineArrow>
+					<LineArrowPosition>END</LineArrowPosition>
+				</AgentLink>
+			</AgentLinks>
+
+
+			<Presentation>
+				<Level>
+					<Id>1696264168447</Id>
+					<Name><![CDATA[level]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<LevelVisibility>DIM_NON_CURRENT</LevelVisibility>
+
+			<Presentation>
+				<Figure3D>
+					<Id>1696264189766</Id>
+					<Name><![CDATA[object3d]]></Name>
+					<X>0</X><Y>-3</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>0</X><Y>-3</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[3d/table_cafe.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[Steel-BRP_Bison-]]></Name>
+							<OriginalColor>-9680098</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[material]]></Name>
+							<OriginalColor>-5130306</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>6.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+				</Figure3D>
+				<Figure3D>
+					<Id>1696264258713</Id>
+					<Name><![CDATA[object3d1]]></Name>
+					<X>0</X><Y>4</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>0</X><Y>4</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ResourceReference>
+						<PackageName><![CDATA[resto]]></PackageName>
+						<ClassName><![CDATA[3d/table_cafe.dae]]></ClassName>
+					</ResourceReference>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[Steel-BRP_Bison-]]></Name>
+							<OriginalColor>-9680098</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[material]]></Name>
+							<OriginalColor>-5130306</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>6.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+					<InternalLighting>OFF</InternalLighting>
+					<IgnoreSceneLights>false</IgnoreSceneLights>
+				</Figure3D>
+				<PointNode>
+					<Id>1696264412325</Id>
+					<Name><![CDATA[node]]></Name>
+					<X>-8.5</X><Y>-4</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<FakeNode>false</FakeNode>	
+					<Lock>false</Lock>
+					<Color>-14774017</Color>
+					<Radius>4</Radius>
+					<SpeedLimit>false</SpeedLimit>
+					<SpeedLimitValue Class="UnitValue">
+						<Value Class="Double">10</Value>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</SpeedLimitValue>
+				</PointNode>
+				<PointNode>
+					<Id>1696264474105</Id>
+					<Name><![CDATA[node1]]></Name>
+					<X>-8.5</X><Y>4</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<FakeNode>false</FakeNode>	
+					<Lock>false</Lock>
+					<Color>-14774017</Color>
+					<Radius>4</Radius>
+					<SpeedLimit>false</SpeedLimit>
+					<SpeedLimitValue Class="UnitValue">
+						<Value Class="Double">10</Value>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</SpeedLimitValue>
+				</PointNode>
+				<PointNode>
+					<Id>1696264487250</Id>
+					<Name><![CDATA[node2]]></Name>
+					<X>7.5</X><Y>-4</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<FakeNode>false</FakeNode>	
+					<Lock>false</Lock>
+					<Color>-14774017</Color>
+					<Radius>4</Radius>
+					<SpeedLimit>false</SpeedLimit>
+					<SpeedLimitValue Class="UnitValue">
+						<Value Class="Double">10</Value>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</SpeedLimitValue>
+				</PointNode>
+				<PointNode>
+					<Id>1696264487255</Id>
+					<Name><![CDATA[node3]]></Name>
+					<X>7.5</X><Y>4</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<Z>0</Z>
+					<FakeNode>false</FakeNode>	
+					<Lock>false</Lock>
+					<Color>-14774017</Color>
+					<Radius>4</Radius>
+					<SpeedLimit>false</SpeedLimit>
+					<SpeedLimitValue Class="UnitValue">
+						<Value Class="Double">10</Value>
+						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+					</SpeedLimitValue>
+				</PointNode>
+			</Presentation>
+
+				</Level>
+			</Presentation>
+
+		</ActiveObjectClass>
 	</ActiveObjectClasses>	
 	<DifferentialEquationsMethod>EULER</DifferentialEquationsMethod>
 	<MixedEquationsMethod>RK45_NEWTON</MixedEquationsMethod>
@@ -22054,7 +21382,7 @@ T agent - the agent. ]]></Description>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
 				<Title><![CDATA[Resto : Simulation]]></Title>	
 				<EnableDeveloperPanel>true</EnableDeveloperPanel>
-				<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+				<ShowDeveloperPanelOnStart>true</ShowDeveloperPanelOnStart>
 				<RealTimeScale>1.0</RealTimeScale>
 			</PresentationProperties>
 			<ModelTimeProperties>

@@ -2914,7 +2914,7 @@ unit.enTarea=false;]]></Code>
 						<Parameter>
 							<Name><![CDATA[capacity]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[5]]></Code>
+								<Code><![CDATA[capacidadCocina]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -29355,7 +29355,7 @@ T agent - the agent. ]]></Description>
 		<Height>600</Height>
 	</Frame>
 	<Database>
-		<Logging>true</Logging>
+		<Logging>false</Logging>
 		<AutoExport>true</AutoExport>
 		<ShutdownCompact>true</ShutdownCompact>
 		<ImportSettings>
@@ -29399,6 +29399,15 @@ T agent - the agent. ]]></Description>
 					<PackageName><![CDATA[resto_base]]></PackageName>
 					<ClassName><![CDATA[Main]]></ClassName>
 					<ItemName><![CDATA[cantMozos]]></ItemName>
+				</InputReference>
+    		</RunConfigurationInput>
+    		<RunConfigurationInput>
+				<Id>1697750746879</Id>
+				<Name><![CDATA[Capacidad de la cocina]]></Name>
+				<InputReference>
+					<PackageName><![CDATA[resto_base]]></PackageName>
+					<ClassName><![CDATA[Main]]></ClassName>
+					<ItemName><![CDATA[capacidadCocina]]></ItemName>
 				</InputReference>
     		</RunConfigurationInput>		
 		</Inputs>
@@ -29569,7 +29578,7 @@ insertInto(resultados).columns(
 					<ShowLabel>true</ShowLabel>
 					<ResourceReference>
 						<PackageName><![CDATA[resto_base]]></PackageName>
-						<ClassName><![CDATA[C:/Users/Ivan/Documents/Anylogic-Models/Resto-Base/Resultados.xlsx]]></ClassName>
+						<ClassName><![CDATA[C:/Users/fausa/Downloads/Anylogic-Models-master/Anylogic-Models-master/Resto-Base/simulacion.xlsx]]></ClassName>
 					</ResourceReference>
 					<SaveInSnapshot>false</SaveInSnapshot>
 					<LoadOnStartup>true</LoadOnStartup>
@@ -30343,7 +30352,7 @@ excelResultados.writeDataSet(dsUtilizacion, 1, 2, 1);
 excelResultados.writeFile();]]></AfterExperimentCode>
 			<AllowParallelEvaluations>true</AllowParallelEvaluations>
 			<UseFreeformParameters>true</UseFreeformParameters>
-			<NumberOfRuns>100</NumberOfRuns>
+			<NumberOfRuns>10</NumberOfRuns>
 			<FreeformParamValue>	
 				<Id>1697633469540</Id>
 			</FreeformParamValue>
@@ -30469,15 +30478,11 @@ excelResultados.writeFile();]]></AfterExperimentCode>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 		</Resource>
 		<Resource>
-			<Path><![CDATA[C:/Users/Ivan/Documents/Anylogic-Models/Resto-Base/Resultados.xlsx]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		</Resource>
-		<Resource>
-			<Path><![CDATA[C:/Users/Ivan/Documents/Anylogic-Models/Resto-Base/tabla.xlsx]]></Path>
-			<ReferencedFromUserCode>false</ReferencedFromUserCode>
-		</Resource>
-		<Resource>
 			<Path><![CDATA[database/Resultados_Base.xlsx]]></Path>
+			<ReferencedFromUserCode>false</ReferencedFromUserCode>
+		</Resource>
+		<Resource>
+			<Path><![CDATA[C:/Users/fausa/Downloads/Anylogic-Models-master/Anylogic-Models-master/Resto-Base/simulacion.xlsx]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 		</Resource>
 	</ModelResources>
@@ -30499,6 +30504,6 @@ excelResultados.writeFile();]]></AfterExperimentCode>
 		<VersionMinor>0</VersionMinor>
 		<VersionBuild>5</VersionBuild>
     </RequiredLibraryReference>
-	<CloudModelUuid><![CDATA[af35107a-3d48-4919-9fc8-90c8f9010cac]]></CloudModelUuid>
+	<CloudModelUuid><![CDATA[78d31ba5-036c-418f-9d63-75ef0a8dfc95]]></CloudModelUuid>
 </Model>
 </AnyLogicWorkspace>
